@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin: 0
+  font-family: $heading-font-family
+  letter-spacing: 3px
+
+h1
+  font-size: 4em
+  text-transform: uppercase
+  &::after
+    content: ""
+    height: 4px
+    border-radius: 5px
+    width: 50%
+    background-color: $white-color
+    opacity: 0.2
+    display: block
+    margin: 10px 0 50px
+
+h2
+  font-size: 2.5em
+
+h3
+  font-size: 1.8em
+  font-family: $base-font-family
+  text-transform: uppercase
+  font-weight: lighter
+  margin-bottom: 30px
+  line-height: 1.5
+  span
+    font-size: 1.9em
+
+h4
+  font-size: 1.4em

@@ -1,0 +1,58 @@
+@mixin square-size($height)
+  height: $height
+  width: $height
+
+@mixin circleMask($height)
+  height: $height
+  width: $height
+  border-radius: $height
+
+@mixin transition($property, $time, $animation)
+  transition: $property $time $animation
+
+
+// -------------------- //
+// ------BORDER-------- //
+// -------------------- //
+
+@mixin border($width, $style, $color)
+  border: $width $style $color
+
+@mixin border-top($width, $style, $color)
+  border-top: $width $style $color
+
+@mixin border-bottom($width, $style, $color)
+  border-bottom: $width $style $color
+
+@mixin border-right($width, $style, $color)
+  border-right: $width $style $color
+
+@mixin border-left($width, $style, $color)
+  border-left: $width $style $color
+
+
+// -------------------- //
+
+@mixin box-shadow($x, $y, $blur, $spread, $color)
+  box-shadow: $x $y $blur $spread $color
+
+@mixin text-shadow($x, $y, $blur, $spread, $color)
+  text-shadow: $x $y $blur $spread $color
+
+@mixin background-center
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+
+@mixin clearfix
+  zoom: 1
+  &::after
+    content: ""
+    clear: both
+    display: block
+    visibility: hidden
+
+@mixin flex($direction)
+  display: flex
+  align-items: center
+  flex-direction: $direction
