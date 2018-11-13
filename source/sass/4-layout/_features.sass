@@ -1,0 +1,31 @@
+.features
+  .row
+    height: 200px
+    margin-bottom: 125px
+    &:last-of-type
+      margin-bottom: 0
+    &:nth-of-type(even)
+      .col
+        float: right
+        h2
+          color: $primary-color
+      .span-2-of-3
+        text-align: right
+        p
+          margin-left: auto
+  .col
+    height: 100%
+  svg
+    height: 100%
+  .span-1-of-3
+    text-align: center
+  .span-2-of-3
+    display: flex
+    align-items: center
+    flex-direction: right
+    h2
+      color: $secondary-color
+    p
+      color: $font-color
+      font-size: 1.2em
+      width: 80%
