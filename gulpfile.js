@@ -21,6 +21,8 @@ var htmlSource = 'source/*.html',
     jsVendorSource = 'source/js/vendors/*.js',
     jsAppSource = 'source/js/*.js',
     jsDestination = 'build/assets/js/',
+    jsonSource = 'source/js/json/*.json',
+    jsonDestination = 'build/assets/build/js/json/',
     imgSource = 'source/img/*',
     imgDestination = 'build/assets/img/',
     faviconSource = 'source/favicon/*',
@@ -112,6 +114,12 @@ gulp.task('appjs', function (cb) {
     cb
   );
 });
+
+//JSON Task
+gulp.task('json', function() {
+  gulp.src(jsonSource)
+    .pipe(gulp.dest(jsonDestination));
+})
 
 //image minify
 gulp.task('img-minify', () => {
