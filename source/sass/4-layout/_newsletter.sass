@@ -1,0 +1,44 @@
+.newsletter
+  background: url($newsletter-bg) center center no-repeat
+  background-size: cover
+  color: $secondary-color
+  padding: 100px 20px
+
+  h2,
+  .kicker
+    text-transform: uppercase
+    margin-bottom: 30px
+
+  .kicker
+    font-weight: bold
+    letter-spacing: 1px
+    font-size: 1.3em
+    opacity: 0.85
+
+  input[type="submit"],
+  input[type="email"]
+    outline: none
+
+  input[type="email"]
+    display: block
+    height: 50px
+    font-size: 1em
+    line-height: 44px
+    width: 50%
+    outline: none
+    border: 2px solid $secondary-color
+    border-radius: 3px
+    padding: 0 20px
+    font-weight: bold
+    letter-spacing: 1px
+    margin-bottom: 36px
+    background-color: rgba($white-color, 0.5)
+    color: $secondary-color
+    transition: all 0.2s ease
+    &:focus
+      background-color: rgba($white-color, 1)
+
+  ::placeholder
+    letter-spacing: 1px
+    font-weight: normal
+    color: $secondary-color
