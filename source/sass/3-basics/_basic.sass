@@ -4,13 +4,24 @@
 html
   font-family: $base-font-family
   font-size: 16px
+  @media (max-width: $large-breakpoint)
+    font-size: 14px
+  @media (max-width: $medium-breakpoint)
+    font-size: 12px
+  @media (max-width: $extra-small-breakpoint)
+    font-size: 10px
 
 .row
   max-width: 1140px
   margin: 0 auto
-
+  @media (max-width: $small-breakpoint)
+    .col
+      display: block
+      width: 100%
 section
   padding: 100px 0
+  @media (max-width: $medium-breakpoint)
+    padding: 75px 0
 
 ::selection
   background-color: rgba($font-color, 0.4)

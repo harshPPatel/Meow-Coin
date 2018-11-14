@@ -2,6 +2,14 @@
   .row
     height: 200px
     margin-bottom: 125px
+    @media (max-width: $large-breakpoint)
+      height: 160px
+    @media (max-width: $medium-breakpoint)
+      height: 140px
+      margin-bottom: 75px
+    @media (max-width: $small-breakpoint)
+      height: auto
+      text-align: center
     &:last-of-type
       margin-bottom: 0
     &:nth-of-type(even)
@@ -11,12 +19,19 @@
           color: $primary-color
       .span-2-of-3
         text-align: right
+        @media (max-width: $small-breakpoint)
+          text-align: center
+          p
+            margin: 10px auto 0
         p
           margin-left: auto
   .col
     height: 100%
   svg
     height: 100%
+    max-height: 150px
+    @media (max-width: $small-breakpoint)
+      margin-bottom: 25px
   .span-1-of-3
     text-align: center
   .span-2-of-3
@@ -30,3 +45,5 @@
       font-size: 1.2em
       width: 80%
       letter-spacing: 2px
+      @media (max-width: $small-breakpoint)
+        margin: 10px auto 0
