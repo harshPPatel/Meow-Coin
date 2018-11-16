@@ -1,4 +1,4 @@
-var featureJSONSource = "/assets/js/json/features.json";
+var featureJSONSource = "assets/js/json/features.json";
 
 function printFeatureObject(jsonObject) {
   var divs = document.getElementsByClassName('--js-feature-content');
