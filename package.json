@@ -1,12 +1,12 @@
 {
-  "name": "gulp-project-starter-kit",
+  "name": "meow-coin",
   "version": "1.0.0",
-  "description": "A starter kit for projects using gulp",
+  "description": "A simple website made with HTML and CSS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
-  "author": "",
+  "author": "Harsh P Patel",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",
