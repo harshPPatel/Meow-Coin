@@ -1,1 +1,1 @@
-# Meow-Coin
+# Meow-Coin Project
